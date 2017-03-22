@@ -9,7 +9,7 @@
  * @license   GNU General Public License 2.0+
  *
  * @wordpress-plugin
- * Plugin Name: WpPhotodex
+ * Plugin Name: WP Photodex
  * Plugin URI: https://anthonyskelton.com/wp-photodex
  * Description: A WordPress Plugin to share your pokemon photo collection
  * Version: 1.0.0
