@@ -57,7 +57,7 @@ register_activation_hook( PHOTODEX_PLUGIN, __NAMESPACE__ . '\activate_the_plugin
  * @return void
  */
 function activate_the_plugin() {
-	Custom\register_project_custom_post_type();
+	Custom\register_photodex_custom_post_type();
 
 	flush_rewrite_rules();
 }
