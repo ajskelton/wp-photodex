@@ -1,5 +1,6 @@
 === WP Photodex ===
 Contributors: ajskelton
+Donate link: https://anthonyskelton.com/contact
 Tags: pokemon, photodex, pokemon go, pokedex
 Requires at least: 4.6
 Tested up to: 4.7
@@ -44,12 +45,23 @@ This section describes how to install the plugin and get it working.
 3. Use the Photodex screen to begin adding Pokemon
 4. Add the shortcode to a post/page to print the full Photodex or a single Pokemon
 
+== Frequently Asked Questions ==
+
+= Can I have more than one picture for a pokemon? =
+No, to prevent repeats in the full photodex you can only assign a post to single pokedex number, and that number is no longer
+available for future posts.
+
 == Screenshots ==
 
 1. A screen shot of a full photodex being rendered. This is only a partial, an actual photodex would continue until your highest pokedex number pokemon.
 2. This is an example of a single pokemon being rendered with the default 'medium' size.
 
 == Changelog ==
+
+= 1.0.0 =
+* Initial Release
+
+== Upgrade Notice ==
 
 = 1.0.0 =
 * Initial Release
