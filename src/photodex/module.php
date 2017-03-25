@@ -37,6 +37,7 @@ function autoload() {
 		'custom/post-type.php',
 		'shortcode/shortcode.php',
 		'util/utility-functions.php',
+		'template/helpers.php',
 		'pokedex.php'
 	);
 
