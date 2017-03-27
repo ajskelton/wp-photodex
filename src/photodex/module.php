@@ -24,6 +24,11 @@ function add_my_stylesheet() {
 	wp_enqueue_style( 'wp-photodex', PHOTODEX_URL . '/src/photodex/assets/dist/css/style.css', false, PHOTODEX_VERSION, false  );
 }
 
+add_action( 'init', __NAMESPACE__ . '\add_photodex_thumbnail_size' );
+function add_photodex_thumbnail_size() {
+	add_image_size( 'photodex_thumbnail', '150', '150', true );
+}
+
 /**
  * Autoload plugin files
  *

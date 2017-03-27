@@ -11,13 +11,13 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 The WP Photodex plugin creates an easy way for you to share your photos of Pokemon in the wild of Pokemon Go.
 
 == Description ==
-The WP Photodex creates a custom post type for you to add the photos of the pokemon you capture in the wild.
+The WP Photodex creates a custom post type for you to add the photos of the pokemon you capture in the wild. It was inspired by Jamie Humphries and his [photodex project](https://github.com/jamiehumphries/photodex)
 
 Mimicking the in game pokedex the WP Photodex organizes the pokemon by pokedex number and shows your entire collection or one of your choosing. You can also show a single random pokemon.
 
 In the Admin section you can sort your posts by name, or by pokedex number. When you add a new post you assign it to a pokemon. Each pokemon can only be assigned once, if you want a new picture you'll have to update the featured image of the original post or delete it and create a new one.
 
-=== Admin ===
+Admin:
 
 The WP Pokemon Photodex plugin adds a tab to the admin for the Photodex post class.
 
