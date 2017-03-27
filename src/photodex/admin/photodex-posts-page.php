@@ -146,7 +146,7 @@ function edit_photodex_columns() {
 }
 
 
-add_action( 'manage_photodex_posts_custom_column', __NAMESPACE__ . '\manage_photodex_columns', 10, 2 );
+add_action( 'manage_wp-photodex_posts_custom_column', __NAMESPACE__ . '\manage_photodex_columns', 10, 2 );
 /**
  * Manage the admin columns on the Photodex Post Class
  *
