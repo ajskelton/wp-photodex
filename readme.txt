@@ -4,7 +4,7 @@ Donate link: https://anthonyskelton.com/contact
 Tags: pokemon, photodex, pokemon go, pokedex
 Requires at least: 4.6
 Tested up to: 4.7
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,11 +13,11 @@ The WP Photodex plugin creates an easy way for you to share your photos of Pokem
 == Description ==
 The WP Photodex creates a custom post type for you to add the photos of the pokemon you capture in the wild.
 
-Mimicking the in game pokedex the photodex organizes the pokemon by pokedex number and shows your entire collection or one of your choosing. You can also show a single random pokemon.
+Mimicking the in game pokedex the WP Photodex organizes the pokemon by pokedex number and shows your entire collection or one of your choosing. You can also show a single random pokemon.
 
 In the Admin section you can sort your posts by name, or by pokedex number. When you add a new post you assign it to a pokemon. Each pokemon can only be assigned once, if you want a new picture you'll have to update the featured image of the original post or delete it and create a new one.
 
-Admin:
+=== Admin ===
 
 The WP Pokemon Photodex plugin adds a tab to the admin for the Photodex post class.
 
