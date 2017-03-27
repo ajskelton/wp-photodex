@@ -12,7 +12,7 @@
  * Plugin Name: WP Photodex
  * Plugin URI: https://anthonyskelton.com/wp-photodex
  * Description: A WordPress Plugin to share your pokemon photo collection
- * Version: 1.0.1gs
+ * Version: 1.0.2
  * Author: ajskelton
  * Author URI: https://anthonyskelton.com
  * Text Domain: wp-photodex
