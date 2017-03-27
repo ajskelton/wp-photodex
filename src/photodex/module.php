@@ -21,7 +21,7 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\add_my_stylesheet' );
  * @since 1.0.0
  */
 function add_my_stylesheet() {
-	wp_enqueue_style( 'photodex', PHOTODEX_URL . '/src/photodex/assets/dist/css/style.css', false, PHOTODEX_VERSION, false  );
+	wp_enqueue_style( 'wp-photodex', PHOTODEX_URL . '/src/photodex/assets/dist/css/style.css', false, PHOTODEX_VERSION, false  );
 }
 
 /**

@@ -40,7 +40,7 @@ function add_post_meta_boxes() {
 		'pokedex_number',
 		esc_html__( 'Pokedex Number', PHOTODEX_TEXT_DOMAIN ),
 		__NAMESPACE__ . '\photodex_meta_box',
-		'photodex',
+		'wp-photodex',
 		'normal',
 		'high'
 	);
@@ -59,7 +59,7 @@ function photodex_meta_box() {
 	$photodex_posts   = Util\query_photodex_posts();
 	$filtered_pokedex = Util\remove_existing_photodex_posts( $full_pokedex, $pokedex_number, $photodex_posts );
 	?>
-	<?php wp_nonce_field( basename( __FILE__ ), 'photodex_meta_nonce' ); ?>
+	<?php wp_nonce_field( basename( __FILE__ ), 'wp-photodex_meta_nonce' ); ?>
     <p>
         <label for="pokedex_number">
 			<?php _e( "Choose the pokemon number" ); ?>
@@ -90,7 +90,7 @@ add_action( 'save_post', __NAMESPACE__ . '\save_photodex_meta', 10, 2 );
 function save_photodex_meta( $post_id, $post ) {
 
 	// Verify the nonce before processing
-	if ( ! isset( $_POST['photodex_meta_nonce'] ) || ! wp_verify_nonce( $_POST['photodex_meta_nonce'], basename( __FILE__ ) ) ) {
+	if ( ! isset( $_POST['wp-photodex_meta_nonce'] ) || ! wp_verify_nonce( $_POST['wp-photodex_meta_nonce'], basename( __FILE__ ) ) ) {
 		return $post_id;
 	}
 
@@ -124,7 +124,7 @@ function save_photodex_meta( $post_id, $post ) {
 }
 
 
-add_filter( 'manage_edit-photodex_columns', __NAMESPACE__ . '\edit_photodex_columns' );
+add_filter( 'manage_edit-wp-photodex_columns', __NAMESPACE__ . '\edit_photodex_columns' );
 /**
  * Edit the admin column headers on the Photodex Post Class
  *
@@ -183,7 +183,7 @@ function manage_photodex_columns( $column, $post_id ) {
 	}
 }
 
-add_filter( 'manage_edit-photodex_sortable_columns', __NAMESPACE__ . '\sort_columns_by_pokedex_number' );
+add_filter( 'manage_edit-wp-photodex_sortable_columns', __NAMESPACE__ . '\sort_columns_by_pokedex_number' );
 /**
  * Tell WordPress to allow the pokedex number column to be sortable.
  *
@@ -232,8 +232,8 @@ add_action( 'do_meta_boxes', __NAMESPACE__ . '\move_featured_meta_box' );
  * @return void
  */
 function move_featured_meta_box() {
-	remove_meta_box( 'postimagediv', 'photodex', 'side' );
-	add_meta_box( 'postimagediv', __( 'Featured Image' ), 'post_thumbnail_meta_box', 'photodex', 'normal', 'high' );
+	remove_meta_box( 'postimagediv', 'wp-photodex', 'side' );
+	add_meta_box( 'postimagediv', __( 'Featured Image' ), 'post_thumbnail_meta_box', 'wp-photodex', 'normal', 'high' );
 }
 
 
@@ -247,7 +247,7 @@ add_action( 'do_meta_boxes', __NAMESPACE__ . '\move_genesis_boxes_lower' );
  */
 function move_genesis_boxes_lower() {
 	if ( function_exists( 'genesis' ) ) {
-		remove_meta_box( 'genesis_inpost_seo_box', 'photodex', 'normal' );
-		remove_meta_box( 'genesis_inpost_layout_box', 'photodex', 'normal' );
+		remove_meta_box( 'genesis_inpost_seo_box', 'wp-photodex', 'normal' );
+		remove_meta_box( 'genesis_inpost_layout_box', 'wp-photodex', 'normal' );
 	}
 }

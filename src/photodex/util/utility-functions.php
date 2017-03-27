@@ -21,7 +21,7 @@ namespace Ajskelton\WpPhotodex\Photodex\Util;
  */
 function query_photodex_posts() {
 	$config_args = array(
-		'post_type'      => 'photodex',
+		'post_type'      => 'wp-photodex',
 		'posts_per_page' => - 1,
 		'meta_key'       => 'pokedex_number',
 		'orderby'        => 'meta_value_num',
@@ -40,7 +40,7 @@ function query_photodex_posts() {
  */
 function query_single_random_photodex() {
 	$config_args = array(
-		'post_type' => 'photodex',
+		'post_type' => 'wp-photodex',
 		'posts_per_page' => 1,
 		'orderby' => 'rand'
 	);

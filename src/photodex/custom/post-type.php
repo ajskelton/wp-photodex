@@ -43,7 +43,7 @@ function register_photodex_custom_post_type() {
 		'has_archive' => true,
 	);
 
-	register_post_type( 'photodex', $args );
+	register_post_type( 'wp-photodex', $args );
 }
 
 /**
