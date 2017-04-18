@@ -251,3 +251,4 @@ function move_genesis_boxes_lower() {
 		remove_meta_box( 'genesis_inpost_layout_box', 'wp-photodex', 'normal' );
 	}
 }
+
