@@ -36,3 +36,5 @@ define( 'PHOTODEX_URL', $plugin_url );
 define( 'PHOTODEX_TEXT_DOMAIN', 'wp-photodex' );
 
 include( __DIR__ . '/src/plugin.php' );
+
+// test
